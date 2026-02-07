@@ -1,18 +1,35 @@
 ---
 name: Bon Woong Ku
-location: Mountain View, CA
+location: Morgan Hill, CA
 phone: "+1 (669) 225-1858"
 email: bon.ku@synopsys.com
-title: Senior Staff EDA Algorithm Engineer
+title: Principal R&D Engineer
 ---
 
 ## Summary
-EDA R&D engineer with **10+ years** of experience designing **production-grade placement, routing, timing, and signoff optimization systems** for advanced nodes and 3D ICs. Proven track record of shipping core algorithms used at scale in commercial tools and applying machine learning to augment or replace heuristic design loops. Ph.D. with deep expertise spanning **PPA optimization, signoff closure, and ML-driven physical design**, interested in building **self-improving chip design systems**.
+EDA R&D engineer with **10+ years** of experience designing **production-grade feasibility, placement, routing, timing, and signoff optimization services** for advanced node 2D ICs and advanced multi-die packaging systems. Proven track record of shipping core EDA algorithms used at scale in commercial tools. Ph.D. with deep expertise spanning **PPA optimization and physical design methodologies for 3D ICs, and its neuromorphic applications**, interested in building **self-improving chip design systems**.
+
+## Active roles
+- DAC 2026 Technical Program Committee member
+- Synopsys 3DIC Compiler lead R&D engineers
+- Architecture interposer routing feature, taping out customers
+- Architecture feasibility-aware global resource optimization feature
 
 ## Core expertise
 - **EDA algorithms & systems:** placement, routing, legalization, timing closure, physical ECO, signoff flows (EM/IR, DRC/LVS), RC extraction  
 - **Optimization methods:** heuristic search, co-optimization loops, experiment design & QoR evaluation, ML-guided physical design (CNN/RNN, surrogate modeling)  
 - **Software engineering:** performance-critical C/C++; Python automation; Rust; Tcl/Shell in EDA environments
+
+# Work Experience
+- Synopsys PrimeTime, PrimeECO, PrimeClosure R&D engineers
+- Architecture for ECO routing optimizer
+- Architecture for ECO legalizer for TSMC N3, N2 certification
+- tweaker, primesuite tool integration
+
+# Research Experience
+
+
+
 
 ## Experience
 
@@ -66,9 +83,12 @@ EDA R&D engineer with **10+ years** of experience designing **production-grade p
 **Seoul National University** — B.S., Electrical and Computer Engineering
 
 ## Honors
+- Technology & Product Development Group Award (2025), presenter: Shankar Krishnamoorthy (CPDO, Synopsys)
+- Team Award - Synopsys (2022), presenter: Jacob Avidan (SVP, Synopsys)
 - Donald O. Pederson Best Paper Award — IEEE TCAD (2022)
-- Customer Success Award — Synopsys (Q4 FY21)
-- Signoff Platform & Innovation Recognition Award — Synopsys (Q4 FY20)
+- Customer Success Award — Synopsys (2021), presenter: Jacob Avidan (SVP, Synopsys)
+- Contribution Aware - Synopsys (2021), presenter: Jacob Avidan (SVP, Synopsys)
+- Signoff Platform & Innovation Recognition Award — Synopsys (2020), presenter: Jacob Avidan (SVP, Synopsys)
 - Best Paper Award Nomination — ACM ISPD (2018)
 - Presidential Science Scholarship — Korea Student Aid Foundation (2008–2014)
 
