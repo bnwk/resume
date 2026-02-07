@@ -1,11 +1,12 @@
 {
-  "name": "resume-pages",
+  "name": "resume-pages-simple",
   "private": true,
   "type": "module",
   "scripts": {
-    "export:pdf": "node scripts/export_pdf.mjs --url http://localhost:8000 --out resume.pdf"
+    "build": "node scripts/build.mjs"
   },
   "dependencies": {
+    "markdown-it": "^14.1.0",
     "playwright": "^1.49.0"
   }
 }
