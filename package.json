@@ -1,0 +1,11 @@
+{
+  "name": "resume-pages",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export:pdf": "node scripts/export_pdf.mjs --url http://localhost:8000 --out resume.pdf"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}
