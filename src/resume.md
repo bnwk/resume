@@ -6,11 +6,6 @@ email: bon.ku@synopsys.com
 title: Senior Staff EDA Algorithm Engineer
 ---
 
-# Bon Woong Ku
-
-**Senior Staff EDA Algorithm Engineer** · Mountain View, CA  
-**Email:** bon.ku@synopsys.com · **Phone:** +1 (669) 225-1858
-
 ## Summary
 EDA algorithm engineer with **10+ years** of experience designing **production-grade placement, routing, timing, and signoff optimization systems** for advanced nodes and 3D ICs. Proven track record of shipping core algorithms used at scale in commercial tools and applying machine learning to augment or replace heuristic design loops. Ph.D. with deep expertise spanning **PPA optimization, signoff closure, and ML-driven physical design**, interested in building **self-improving chip design systems**.
 

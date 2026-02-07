@@ -1,19 +1,19 @@
 /* ==========================================================================
-   Resume Stylesheet — Clean, modern, print-optimized
+   Clean Researcher Resume — Minimal, professional, academic style
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
 :root {
-  --color-ink: #1a1a1a;
-  --color-muted: #5a5a5a;
-  --color-accent: #2c5282;
-  --color-accent-hover: #1a365d;
-  --color-border: #d0d0d0;
-  --color-bg: #fafaf9;
-  --color-paper: #ffffff;
-  --font-serif: 'Libre Baskerville', Georgia, serif;
-  --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-text: #1a1a1a;
+  --color-muted: #4a4a4a;
+  --color-light: #777;
+  --color-rule: #d4d4d4;
+  --color-bg: #fff;
+  --color-accent: #1e6b5c;
+  --color-accent-light: #e8f4f1;
+  --font-serif: 'Crimson Text', Georgia, serif;
+  --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 *, *::before, *::after {
@@ -23,7 +23,6 @@
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -31,19 +30,18 @@ body {
   padding: 2rem 1rem;
   font-family: var(--font-sans);
   font-size: 0.9375rem;
-  line-height: 1.6;
-  color: var(--color-ink);
-  background: var(--color-bg);
+  line-height: 1.65;
+  color: var(--color-text);
+  background: #f5f5f4;
 }
 
 /* Page container */
 .page {
-  max-width: 52rem;
+  max-width: 48rem;
   margin: 0 auto;
-  background: var(--color-paper);
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
-  overflow: hidden;
+  padding: 2.5rem 3rem;
+  background: var(--color-bg);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
 
 /* ==========================================================================
@@ -51,78 +49,72 @@ body {
    ========================================================================== */
 
 .header {
-  padding: 2.5rem 3rem 2rem;
-  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
-  color: #fff;
   text-align: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .name {
   margin: 0 0 0.25rem;
   font-family: var(--font-serif);
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 0.02em;
-  color: #fff;
+  letter-spacing: 0.01em;
+  color: var(--color-accent);
 }
 
 .sub {
-  margin-bottom: 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  color: rgba(255,255,255,0.85);
-  letter-spacing: 0.01em;
+  font-size: 0.9375rem;
+  color: var(--color-muted);
 }
 
 .links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
+  margin-top: 0.5rem;
   font-size: 0.875rem;
+  color: var(--color-muted);
 }
 
 .links a {
-  color: rgba(255,255,255,0.9);
+  color: var(--color-muted);
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
+  transition: color 0.15s;
 }
 
 .links a:hover {
-  border-bottom-color: rgba(255,255,255,0.6);
+  color: var(--color-accent);
 }
 
 .links span {
-  color: rgba(255,255,255,0.4);
+  margin: 0 0.4rem;
+  color: var(--color-light);
 }
 
-/* Badge bar (download/print links) */
+/* Badge bar */
 .badgebar {
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 0.75rem;
 }
 
 .badgebar a {
-  display: inline-block;
-  padding: 0.4rem 1rem;
+  padding: 0.35rem 0.9rem;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #fff;
-  background: rgba(255,255,255,0.15);
-  border: 1px solid rgba(255,255,255,0.25);
-  border-radius: 3px;
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+  background: var(--color-accent-light);
+  border: 1px solid var(--color-accent);
+  border-radius: 2px;
   text-decoration: none;
-  transition: background 0.2s, border-color 0.2s;
+  transition: background 0.15s, color 0.15s;
 }
 
 .badgebar a:hover {
-  background: rgba(255,255,255,0.25);
-  border-color: rgba(255,255,255,0.4);
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
 }
 
 /* ==========================================================================
@@ -130,64 +122,61 @@ body {
    ========================================================================== */
 
 .content {
-  padding: 2rem 3rem 3rem;
+  font-size: 0.9375rem;
 }
 
-/* Headings */
-h1, h2, h3, h4 {
-  font-family: var(--font-sans);
-  font-weight: 700;
-  color: var(--color-ink);
-  margin-top: 0;
-}
-
+/* Section headings */
 h2 {
-  margin: 2rem 0 1rem;
-  padding-bottom: 0.4rem;
-  font-size: 1.125rem;
+  margin: 1.75rem 0 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   color: var(--color-accent);
   border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.3rem;
 }
 
 h2:first-child {
   margin-top: 0;
 }
 
+/* Job/Position titles */
 h3 {
-  margin: 1.5rem 0 0.5rem;
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--color-ink);
+  margin: 1.25rem 0 0.25rem;
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text);
 }
 
 h3:first-child {
   margin-top: 0;
 }
 
-/* Paragraphs & lists */
+/* Paragraphs */
 p {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.6rem;
 }
 
+/* Lists */
 ul, ol {
-  margin: 0 0 1rem;
+  margin: 0.25rem 0 1rem;
   padding-left: 1.25rem;
 }
 
 li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.3rem;
 }
 
 li::marker {
   color: var(--color-accent);
 }
 
-/* Strong / emphasis */
+/* Emphasis */
 strong {
   font-weight: 600;
-  color: var(--color-ink);
 }
 
 em {
@@ -198,22 +187,17 @@ em {
 /* Links in content */
 .content a {
   color: var(--color-accent);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
+  text-decoration: underline;
+  text-decoration-color: rgba(30, 107, 92, 0.3);
+  text-underline-offset: 2px;
 }
 
 .content a:hover {
-  border-bottom-color: var(--color-accent);
-}
-
-/* Keywords (if styled separately) */
-p:last-child {
-  margin-bottom: 0;
+  text-decoration-color: var(--color-accent);
 }
 
 /* ==========================================================================
-   Print Styles
+   Print
    ========================================================================== */
 
 @media print {
@@ -228,42 +212,29 @@ p:last-child {
 
   .page {
     max-width: none;
+    padding: 0;
     box-shadow: none;
-    border-radius: 0;
   }
 
   .header {
-    padding: 1.5rem 2rem 1.25rem;
-    background: #1e3a5f !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 
   .name {
-    font-size: 1.75rem;
-  }
-
-  .sub {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 
   .badgebar {
     display: none;
   }
 
-  .content {
-    padding: 1.5rem 2rem 2rem;
-  }
-
   h2 {
     margin-top: 1.25rem;
-    font-size: 1rem;
-    border-bottom-width: 1.5px;
     page-break-after: avoid;
   }
 
   h3 {
-    margin-top: 1rem;
     page-break-after: avoid;
   }
 
@@ -272,9 +243,8 @@ p:last-child {
   }
 
   a {
-    color: inherit !important;
-    text-decoration: none !important;
-    border: none !important;
+    color: inherit;
+    text-decoration: none;
   }
 }
 
@@ -288,24 +258,11 @@ p:last-child {
   }
 
   .page {
-    border-radius: 0;
+    padding: 1.5rem;
     box-shadow: none;
   }
 
-  .header {
-    padding: 2rem 1.5rem 1.5rem;
-  }
-
   .name {
-    font-size: 1.75rem;
-  }
-
-  .content {
-    padding: 1.5rem;
-  }
-
-  .links {
-    flex-wrap: wrap;
+    font-size: 1.5rem;
   }
 }
-
