@@ -19,6 +19,6 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html resume.pdf
+          git add -f index.html resume.pdf
           git commit -m "Rebuild resume artifacts" || echo "No changes"
-          git push
+          git push --force-with-lease
