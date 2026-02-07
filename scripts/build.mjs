@@ -4,7 +4,7 @@ import { chromium } from "playwright";
 import MarkdownIt from "markdown-it";
 
 const root = process.cwd();
-const mdPath = path.join(root, "resume.md");
+const mdPath = path.join(root, "src", "resume.md");
 const outHtml = path.join(root, "index.html");
 const outPdf = path.join(root, "resume.pdf");
 
@@ -59,7 +59,7 @@ const html = `<!doctype html>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>${name} — Resume</title>
-  <link rel="stylesheet" href="css/resume.css" />
+  <link rel="stylesheet" href="src/resume.css" />
 </head>
 <body>
   <main class="page">
