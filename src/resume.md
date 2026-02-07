@@ -7,7 +7,7 @@ title: Senior Staff EDA Algorithm Engineer
 ---
 
 ## Summary
-EDA algorithm engineer with **10+ years** of experience designing **production-grade placement, routing, timing, and signoff optimization systems** for advanced nodes and 3D ICs. Proven track record of shipping core algorithms used at scale in commercial tools and applying machine learning to augment or replace heuristic design loops. Ph.D. with deep expertise spanning **PPA optimization, signoff closure, and ML-driven physical design**, interested in building **self-improving chip design systems**.
+EDA R&D engineer with **10+ years** of experience designing **production-grade placement, routing, timing, and signoff optimization systems** for advanced nodes and 3D ICs. Proven track record of shipping core algorithms used at scale in commercial tools and applying machine learning to augment or replace heuristic design loops. Ph.D. with deep expertise spanning **PPA optimization, signoff closure, and ML-driven physical design**, interested in building **self-improving chip design systems**.
 
 ## Core expertise
 - **EDA algorithms & systems:** placement, routing, legalization, timing closure, physical ECO, signoff flows (EM/IR, DRC/LVS), RC extraction  
