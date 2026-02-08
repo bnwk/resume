@@ -1,103 +1,71 @@
 ---
 name: Bon Woong Ku
-location: Morgan Hill, CA
+location: Sunnyvale, CA
 phone: "+1 (669) 225-1858"
 email: bon.ku@synopsys.com
-title: Principal R&D Engineer
+linkedin: https://linkedin.com/in/bon-woong-ku
+scholar: https://scholar.google.com/citations?user=zFx53eYAAAAJ&hl=en&oi=ao
+title: R&D, Synopsys
 ---
 
 ## Summary
-EDA R&D engineer with **10+ years** of experience designing **production-grade feasibility, placement, routing, timing, and signoff optimization services** for advanced node 2D ICs and advanced multi-die packaging systems. Proven track record of shipping core EDA algorithms used at scale in commercial tools. Ph.D. with deep expertise spanning **PPA optimization and physical design methodologies for 3D ICs, and its neuromorphic applications**, interested in building **self-improving chip design systems**.
+EDA R&D engineer with **10+ years** of experience designing **production-grade feasibility, placement, routing, timing, and signoff optimization services** for advanced nodes and advanced multi-die packaging systems. Proven track record of shipping core EDA algorithms used at scale in commercial tools. Recipient of the **Synopsys Technology & Product Development Group Award (2025)** and **IEEE TCAD Donald O. Pederson Best Paper Award (2022)**. Ph.D. with deep expertise spanning PPA optimization and physical design methodologies for 3D ICs, and their neuromorphic applications, interested in building **self-improving chip design systems**.
 
-## Active roles
-- DAC 2026 Technical Program Committee member
-- Synopsys 3DIC Compiler lead R&D engineers
-- Architecture interposer routing feature, taping out customers
-- Architecture feasibility-aware global resource optimization feature
+## Active Roles
+- **DAC 2026** Technical Program Committee member
+- **Synopsys 3DIC Compiler** — Lead R&D engineer for advanced multi-die rdl routing
 
-## Core expertise
-- **EDA algorithms & systems:** placement, routing, legalization, timing closure, physical ECO, signoff flows (EM/IR, DRC/LVS), RC extraction  
-- **Optimization methods:** heuristic search, co-optimization loops, experiment design & QoR evaluation, ML-guided physical design (CNN/RNN, surrogate modeling)  
-- **Software engineering:** performance-critical C/C++; Python automation; Rust; Tcl/Shell in EDA environments
+## Core Expertise
 
-# Work Experience
-- Synopsys PrimeTime, PrimeECO, PrimeClosure R&D engineers
-- Architecture for ECO routing optimizer
-- Architecture for ECO legalizer for TSMC N3, N2 certification
-- tweaker, primesuite tool integration
+### Multi-Die & 3D IC Physical Design
+*Synopsys 3DIC Compiler (2024–present) · Synopsys StarRC (2016) · IMEC (2015–2016) · Georgia Tech Ph.D. (2014–2019)*
+- Architecting **interposer routing** and **feasibility-aware global optimization**, shipped to 10+ customers with 10× exploration speedup at 3DIC Compiler
+- Developed **tier-partitioning algorithms** and full-chip physical design flows for gate-level monolithic 3D ICs at IMEC
+- Built **extraction-PDN co-optimization** flows for 3D integration at StarRC
+- Created scalable M3D methodologies validated on 10+ designs; developed experimental M3D PDKs at 10nm/7nm for PPA analysis at Georgia Tech
 
-# Research Experience
+### Timing-Driven ECO & Signoff Optimization
+*Synopsys PrimeTime ECO / PrimeECO / PrimeClosure (2019–2024)*
+- Shipped **timing-aware ECO legalization** with **timer–router–legalizer co-optimization**, improving QoR by 20% across 10+ customer signoff flows, certified for TSMC N3/N2
+- Led signoff timer integration for Tweaker ECO merge
 
+### Learning-Guided Physical Design & Neuromorphic Computing
+*Intel Labs (2019) · Georgia Tech Ph.D. (2014–2019)*
+- Automate standard cell routing at advanced Intel nodes, replacing manual heuristics with **reinforcement learning** at Intel microarchitecture group
+- Built **C++ MPI-based parallel spiking neural network simulators** on Oak Ridge supercomputing infrastructure
+- Designed **3D neuromorphic accelerators** and **RISC-V gate-level M3D systems** for emerging memory technologies at DARPA CHIPS project
 
+### Skills
+- **C/C++:** production EDA engines — placement, routing, legalization, parasitic extraction, signoff optimization
+- **Tcl/Shell:** EDA flow integration, customer-facing scripting (PrimeSuite, 3DIC Compiler)
+- **Rust:** systems programming for next-generation EDA tooling
+- **Python / PyTorch:** ML pipelines, design automation for physical design
 
+## Achievements
 
-## Experience
+### Honors
+- **Technology & Product Development Group Award** — Shankar Krishnamoorthy (CPDO, Synopsys, 2025) 
+- **Donald O. Pederson Best Paper Award** — IEEE TCAD (2022)
+- **Team Award** — Jacob Avidan (SVP, Synopsys, 2022)
+- **Customer Success Award** — Jacob Avidan (SVP, Synopsys, 2021)
+- **Contribution Award** — Jacob Avidan (SVP, Synopsys, 2021)
+- **Signoff Platform & Innovation Recognition Award** — Jacob Avidan (SVP, Synopsys, 2020)
+- **Best Paper Award Nomination** — ACM ISPD (2018)
+- **Presidential Science Scholarship** — Korea Student Aid Foundation (2008–2014)
 
-### Synopsys — PrimeTime ECO / PrimeECO / PrimeClosure
-**Senior Staff R&D Engineer** · Mountain View, CA · *Aug 2019 – Present*  
-**Focus:** Timing-driven physical ECO and signoff optimization at scale
+### Patent
+- **B. W. Ku**, N. Oh, C. Moon. "Timing-aware Surgical Optimization for Engineering Change Order in Chip Design." [U.S. Patent No. 12,175,181](https://patents.google.com/patent/US12175181B1/en), granted Dec. 2024.
 
-- Designed and shipped **timing-aware ECO placement and legalization algorithms** integrated with commercial signoff flows.
-- Built **co-optimized timer–router–legalizer loops** improving timing QoR while maintaining legality.
-- Developed **surgical wire ECO optimization** techniques for noise and timing closure in post-route signoff stages.
-- Led algorithm work from concept → production, impacting large-scale customer designs.
-- **Patent:** signoff timing-aware surgical wire optimization for ECO.
+### Selected Publications
+*26 total publications · 6 papers at DAC/ICCAD · full list upon request*
 
-**Keywords:** timing closure, heuristic optimization, production EDA, large-scale design systems
-
-### Intel Labs — Microarchitecture Research Lab
-**Research Intern** · Santa Clara, CA · *Jan 2019 – Apr 2019*  
-**Focus:** ML-driven routing automation
-
-- Applied **deep learning (CNN, RNN)** to automate routing decisions in advanced Intel technology nodes.
-- Designed feature extraction and evaluation pipelines to reduce or replace manual routing heuristics.
-- Demonstrated feasibility of **learning-guided routing optimization** using PyTorch on real design data.
-
-**Keywords:** ML for EDA, routing automation, learned heuristics
-
-### Synopsys — StarRC
-**Research Intern** · Mountain View, CA · *May 2016 – Aug 2016*
-- Developed transistor-level parasitic extraction and power integrity flows for monolithic 3D ICs.
-- Explored co-optimization of RC extraction and PDN design for emerging integration technologies.
-
-### IMEC — Design Technology Exploration Team
-**Research Intern** · Leuven, Belgium · *Jun 2015 – Apr 2016*
-- Developed full-chip physical design flows and tier-partitioning algorithms for gate-level monolithic 3D ICs.
-- Evaluated PPA-cost tradeoffs at 10nm and 7nm using experimental PDKs.
-
-## Research
-### Georgia Institute of Technology — GTCAD Lab
-**Ph.D. Research Assistant** · Atlanta, GA · *Aug 2014 – May 2019*  
-**Thesis:** Physical Design Solutions for 3D ICs and their Neuromorphic Applications
-
-- Designed scalable physical design methodologies for monolithic 3D ICs across logic, memory, and heterogeneous systems.
-- Built C++ MPI-based large-scale spiking neural network simulators on supercomputing infrastructure (Oak Ridge).
-- Co-designed architecture + physical design for 3D neuromorphic accelerators.
-- Developed RISC-V-based gate-level M3D systems targeting emerging memory and device technologies.
+- **B. W. Ku**, K. Chang, S. K. Lim, "Compact-2D: A Physical Design Methodology to Build Two-Tier Gate-level 3D ICs," **IEEE TCAD**, 2020 — *Donald O. Pederson Best Paper Award*
+- **B. W. Ku**, K. Chang, S. K. Lim, "Compact-2D: A Physical Design Methodology to Build Commercial-Quality Face-to-Face-Bonded 3D ICs," **ISPD**, 2018 — *Best Paper Nomination*
+- **B. W. Ku**, Y. Liu, Y. Jin, S. Samal, P. Li, S. K. Lim, "Design and Architectural Co-optimization of Monolithic 3D Liquid State Machine-based Neuromorphic Processor," **DAC**, 2018
 
 ## Education
-**Georgia Institute of Technology** — Ph.D. & M.S., Electrical and Computer Engineering  
-- IEEE TCAD Donald O. Pederson Best Paper Award (2022)  
-- 26 publications (8 top-tier conferences/journals)
 
-**Seoul National University** — B.S., Electrical and Computer Engineering
+**Georgia Institute of Technology** — Ph.D. & M.S., Electrical and Computer Engineering, 2019  
+*Thesis: Physical Design Solutions for 3D ICs and their Neuromorphic Applications*  
 
-## Honors
-- Technology & Product Development Group Award (2025), presenter: Shankar Krishnamoorthy (CPDO, Synopsys)
-- Team Award - Synopsys (2022), presenter: Jacob Avidan (SVP, Synopsys)
-- Donald O. Pederson Best Paper Award — IEEE TCAD (2022)
-- Customer Success Award — Synopsys (2021), presenter: Jacob Avidan (SVP, Synopsys)
-- Contribution Aware - Synopsys (2021), presenter: Jacob Avidan (SVP, Synopsys)
-- Signoff Platform & Innovation Recognition Award — Synopsys (2020), presenter: Jacob Avidan (SVP, Synopsys)
-- Best Paper Award Nomination — ACM ISPD (2018)
-- Presidential Science Scholarship — Korea Student Aid Foundation (2008–2014)
-
-## Patent
-- Bon Woong Ku, Nahmsuk Oh, Cho Moon, “Signoff Timing-aware Surgical Wire Optimization for Engineering Change Orders,” App No. 63/121,853.
-
-## Selected publications
-*(Full list available upon request.)*
-- “Compact-2D: A Physical Design Methodology to Build Two-Tier Gate-level 3D ICs,” **IEEE TCAD** (Best Paper Award)
-- “ML-based Wire RC Prediction in Monolithic 3D ICs with an Application to Full-Chip Optimization,” **ISPD**
-- “RTL-to-GDS Tool Flow and Design-for-Test Solutions for Monolithic 3D ICs,” **DAC**
-- “Machine Learning Integrated Pseudo-3D Flow for Monolithic 3D ICs,” **IEEE JXCDC**
+**Seoul National University** — B.S., Electrical and Computer Engineering, 2014

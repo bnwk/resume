@@ -36,6 +36,13 @@ const title = fm.title || "";
 const location = fm.location || "";
 const email = fm.email || "";
 const phone = fm.phone || "";
+const linkedin = fm.linkedin || "";
+const scholar = fm.scholar || "";
+
+const profileLinks = [
+  linkedin ? `<a href="${linkedin}">LinkedIn</a>` : "",
+  scholar ? `<a href="${scholar}">Google Scholar</a>` : "",
+].filter(Boolean).join(`<span>•</span>`);
 
 const headerHtml = `
 <header class="header">
@@ -46,6 +53,7 @@ const headerHtml = `
     ${(email && phone) ? `<span>•</span>` : ""}
     ${phone ? `<a href="tel:${phone.replace(/[^\d+]/g,"")}">${phone}</a>` : ""}
   </div>
+  ${profileLinks ? `<div class="links">${profileLinks}</div>` : ""}
   <div class="badgebar">
     <a href="resume.pdf">Download PDF</a>
     <a href="#" onclick="window.print(); return false;">Print / Save as PDF</a>
