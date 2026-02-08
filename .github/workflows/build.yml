@@ -19,6 +19,6 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f index.html resume.pdf
+          git add -f index.html "resume - Bon Woong Ku -"*.pdf
           git commit -m "Rebuild resume artifacts" || echo "No changes"
           git push --force

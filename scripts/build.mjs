@@ -6,7 +6,11 @@ import MarkdownIt from "markdown-it";
 const root = process.cwd();
 const mdPath = path.join(root, "src", "resume.md");
 const outHtml = path.join(root, "index.html");
-const outPdf = path.join(root, "resume.pdf");
+const now = new Date();
+const mm = String(now.getMonth() + 1).padStart(2, "0");
+const dd = String(now.getDate()).padStart(2, "0");
+const yy = String(now.getFullYear()).slice(-2);
+const outPdf = path.join(root, `resume - Bon Woong Ku - ${yy}${mm}${dd}.pdf`);
 
 function parseFrontmatter(text){
   if (!text.startsWith("---")) return { fm: {}, body: text };
@@ -55,7 +59,7 @@ const headerHtml = `
   </div>
   ${profileLinks ? `<div class="links">${profileLinks}</div>` : ""}
   <div class="badgebar">
-    <a href="resume.pdf">Download PDF</a>
+    <a href="resume - Bon Woong Ku - ${yy}${mm}${dd}.pdf">Download PDF</a>
     <a href="#" onclick="window.print(); return false;">Print / Save as PDF</a>
   </div>
 </header>
