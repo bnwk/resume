@@ -2,7 +2,7 @@
 name: Bon Woong Ku
 location: Sunnyvale, CA
 phone: "+1 (669) 225-1858"
-email: bon.ku@synopsys.com
+email: bwkugt@gmail.com
 linkedin: https://linkedin.com/in/bon-woong-ku
 scholar: https://scholar.google.com/citations?user=zFx53eYAAAAJ&hl=en&oi=ao
 title: R&D, Synopsys
