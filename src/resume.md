@@ -47,8 +47,7 @@ EDA R&D engineer with **10+ years** of experience designing **production-grade f
 - **Technology & Product Development Group Award** — Shankar Krishnamoorthy (CPDO, Synopsys, 2025) 
 - **Donald O. Pederson Best Paper Award** — IEEE TCAD (2022)
 - **Team Award** — Jacob Avidan (SVP, Synopsys, 2022)
-- **Customer Success Award** — Jacob Avidan (SVP, Synopsys, 2021)
-- **Contribution Award** — Jacob Avidan (SVP, Synopsys, 2021)
+- **Contribution Aware, Customer Success Award** — Jacob Avidan (SVP, Synopsys, 2021)
 - **Signoff Platform & Innovation Recognition Award** — Jacob Avidan (SVP, Synopsys, 2020)
 - **Best Paper Award Nomination** — ACM ISPD (2018)
 - **Presidential Science Scholarship** — Korea Student Aid Foundation (2008–2014)
@@ -56,9 +55,10 @@ EDA R&D engineer with **10+ years** of experience designing **production-grade f
 ### Patent
 - **B. W. Ku**, N. Oh, C. Moon. "Timing-aware Surgical Optimization for Engineering Change Order in Chip Design." [U.S. Patent No. 12,175,181](https://patents.google.com/patent/US12175181B1/en), granted Dec. 2024.
 
+<!-- <div class="page-break"></div> -->
+
 ### Selected Publications
 *26 total publications · 6 papers at DAC/ICCAD · full list upon request*
-
 - **B. W. Ku**, K. Chang, S. K. Lim, "Compact-2D: A Physical Design Methodology to Build Two-Tier Gate-level 3D ICs," **IEEE TCAD**, 2020 — *Donald O. Pederson Best Paper Award*
 - **B. W. Ku**, K. Chang, S. K. Lim, "Compact-2D: A Physical Design Methodology to Build Commercial-Quality Face-to-Face-Bonded 3D ICs," **ISPD**, 2018 — *Best Paper Nomination*
 - **B. W. Ku**, Y. Liu, Y. Jin, S. Samal, P. Li, S. K. Lim, "Design and Architectural Co-optimization of Monolithic 3D Liquid State Machine-based Neuromorphic Processor," **DAC**, 2018

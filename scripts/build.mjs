@@ -28,7 +28,7 @@ function parseFrontmatter(text){
 const src = fs.readFileSync(mdPath, "utf-8");
 const { fm, body } = parseFrontmatter(src);
 
-const md = new MarkdownIt({ html: false, linkify: true, typographer: true });
+const md = new MarkdownIt({ html: true, linkify: true, typographer: true });
 const contentHtml = md.render(body);
 
 const name = fm.name || "Resume";
