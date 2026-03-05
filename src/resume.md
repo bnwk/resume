@@ -22,7 +22,7 @@ EDA R&D engineer with **10+ years** shipping **production-grade physical design 
 - Architecting **interposer routing** and **feasibility-aware global optimization**, shipped to 10+ customers with 10× exploration speedup at 3DIC Compiler
 - Developed **tier-partitioning algorithms** and full-chip physical design flows for gate-level monolithic 3D ICs at IMEC
 - Built **extraction-PDN co-optimization** flows for 3D integration at StarRC
-- Created scalable M3D methodologies validated on 10+ designs; developed experimental M3D PDKs at 10nm/7nm for PPA analysis at Georgia Tech
+- Created scalable **M3D methodologies** validated on 10+ designs; developed experimental **M3D PDKs** at 10nm/7nm for PPA analysis at Georgia Tech
 
 ### Timing-Driven ECO & Signoff Optimization
 *Synopsys PrimeTime ECO / PrimeECO / PrimeClosure (2019–2024)*
