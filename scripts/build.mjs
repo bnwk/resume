@@ -4,13 +4,12 @@ import { chromium } from "playwright";
 import MarkdownIt from "markdown-it";
 
 const root = process.cwd();
-const mdPath = path.join(root, "src", "resume.md");
-const outHtml = path.join(root, "index.html");
 const now = new Date();
 const mm = String(now.getMonth() + 1).padStart(2, "0");
 const dd = String(now.getDate()).padStart(2, "0");
 const yy = String(now.getFullYear()).slice(-2);
-const outPdf = path.join(root, `resume - Bon Woong Ku - ${yy}${mm}${dd}.pdf`);
+
+const md = new MarkdownIt({ html: true, linkify: true, typographer: true });
 
 function parseFrontmatter(text){
   if (!text.startsWith("---")) return { fm: {}, body: text };
@@ -29,48 +28,47 @@ function parseFrontmatter(text){
   return { fm, body };
 }
 
-const src = fs.readFileSync(mdPath, "utf-8");
-const { fm, body } = parseFrontmatter(src);
+function buildPage(srcPath, outPath, { pageTitle, headerExtra = "", backLink = "" } = {}) {
+  const src = fs.readFileSync(srcPath, "utf-8");
+  const { fm, body } = parseFrontmatter(src);
+  const contentHtml = md.render(body);
 
-const md = new MarkdownIt({ html: true, linkify: true, typographer: true });
-const contentHtml = md.render(body);
+  const name = fm.name || "Resume";
+  const title = fm.title || "";
+  const location = fm.location || "";
+  const email = fm.email || "";
+  const phone = fm.phone || "";
+  const linkedin = fm.linkedin || "";
+  const scholar = fm.scholar || "";
 
-const name = fm.name || "Resume";
-const title = fm.title || "";
-const location = fm.location || "";
-const email = fm.email || "";
-const phone = fm.phone || "";
-const linkedin = fm.linkedin || "";
-const scholar = fm.scholar || "";
+  const profileLinks = [
+    linkedin ? `<a href="${linkedin}">LinkedIn</a>` : "",
+    scholar ? `<a href="${scholar}">Google Scholar</a>` : "",
+  ].filter(Boolean).join(`<span>•</span>`);
 
-const profileLinks = [
-  linkedin ? `<a href="${linkedin}">LinkedIn</a>` : "",
-  scholar ? `<a href="${scholar}">Google Scholar</a>` : "",
-].filter(Boolean).join(`<span>•</span>`);
+  const headerHtml = `
+  <header class="header">
+    <h1 class="name">${name}</h1>
+    <div class="sub">${[title, location].filter(Boolean).join(" · ")}</div>
+    <div class="links">
+      ${email ? `<a href="mailto:${email}">${email}</a>` : ""}
+      ${(email && phone) ? `<span>•</span>` : ""}
+      ${phone ? `<a href="tel:${phone.replace(/[^\d+]/g,"")}">${phone}</a>` : ""}
+    </div>
+    ${profileLinks ? `<div class="links">${profileLinks}</div>` : ""}
+    <div class="badgebar">
+      ${headerExtra}
+      ${backLink}
+    </div>
+  </header>
+  `.trim();
 
-const headerHtml = `
-<header class="header">
-  <h1 class="name">${name}</h1>
-  <div class="sub">${[title, location].filter(Boolean).join(" · ")}</div>
-  <div class="links">
-    ${email ? `<a href="mailto:${email}">${email}</a>` : ""}
-    ${(email && phone) ? `<span>•</span>` : ""}
-    ${phone ? `<a href="tel:${phone.replace(/[^\d+]/g,"")}">${phone}</a>` : ""}
-  </div>
-  ${profileLinks ? `<div class="links">${profileLinks}</div>` : ""}
-  <div class="badgebar">
-    <a href="resume - Bon Woong Ku - ${yy}${mm}${dd}.pdf">Download PDF</a>
-    <a href="#" onclick="window.print(); return false;">Print / Save as PDF</a>
-  </div>
-</header>
-`.trim();
-
-const html = `<!doctype html>
+  const html = `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>${name} — Resume</title>
+  <title>${name} — ${pageTitle || title}</title>
   <link rel="stylesheet" href="src/resume.css" />
 </head>
 <body>
@@ -83,9 +81,36 @@ const html = `<!doctype html>
 </body>
 </html>
 `;
+  fs.writeFileSync(outPath, html, "utf-8");
+}
 
-fs.writeFileSync(outHtml, html, "utf-8");
+const outHtml = path.join(root, "index.html");
+const outPdf = path.join(root, `resume - Bon Woong Ku - ${yy}${mm}${dd}.pdf`);
+const outPubHtml = path.join(root, "publications.html");
+
+buildPage(
+  path.join(root, "src", "resume.md"),
+  outHtml,
+  {
+    pageTitle: "Resume",
+    headerExtra: `
+      <a href="resume - Bon Woong Ku - ${yy}${mm}${dd}.pdf">Download PDF</a>
+      <a href="#" onclick="window.print(); return false;">Print / Save as PDF</a>
+    `,
+    backLink: `<a href="publications.html">Full Publication List</a>`,
+  },
+);
 console.log("Wrote index.html");
+
+buildPage(
+  path.join(root, "src", "publications.md"),
+  outPubHtml,
+  {
+    pageTitle: "Publications",
+    backLink: `<a href="index.html">← Back to Resume</a>`,
+  },
+);
+console.log("Wrote publications.html");
 
 const browser = await chromium.launch();
 const page = await browser.newPage();
