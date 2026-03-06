@@ -204,7 +204,19 @@ em {
   display: none;
 }
 
+.screen-only {
+  display: inline;
+}
+
 @media print {
+  .screen-only {
+    display: none;
+  }
+
+  .print-only {
+    display: inline;
+  }
+
   html {
     font-size: 11pt;
   }
