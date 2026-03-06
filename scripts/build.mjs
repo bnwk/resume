@@ -120,7 +120,7 @@ await page.pdf({
   path: outPdf,
   format: "A4",
   printBackground: true,
-  margin: { top: "18mm", bottom: "18mm", left: "16mm", right: "16mm" },
+  margin: { top: "12mm", bottom: "12mm", left: "14mm", right: "14mm" },
 });
 await browser.close();
 console.log("Wrote resume.pdf");
