@@ -95,7 +95,6 @@ buildPage(
     pageTitle: "Resume",
     headerExtra: `
       <a href="resume - Bon Woong Ku - ${yy}${mm}${dd}.pdf">Download PDF</a>
-      <a href="#" onclick="window.print(); return false;">Print / Save as PDF</a>
     `,
     backLink: `<a href="publications.html">Full Publication List</a>`,
   },

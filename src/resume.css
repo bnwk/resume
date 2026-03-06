@@ -200,6 +200,10 @@ em {
    Print
    ========================================================================== */
 
+.print-only {
+  display: none;
+}
+
 @media print {
   html {
     font-size: 11pt;
@@ -268,5 +272,13 @@ em {
 
   .name {
     font-size: 1.5rem;
+  }
+
+  .screen-only {
+    display: none !important;
+  }
+
+  .print-only {
+    display: inline !important;
   }
 }
