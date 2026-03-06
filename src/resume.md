@@ -24,16 +24,16 @@ EDA R&D engineer with **10+ years** shipping **production-grade physical design 
 - Built **extraction-PDN co-optimization** flows for 3D integration at StarRC
 - Created scalable **M3D methodologies** validated on 10+ designs; developed experimental **M3D PDKs** at 10nm/7nm for PPA analysis at Georgia Tech
 
-### Timing-Driven ECO & Signoff Optimization
-*Synopsys PrimeTime ECO / PrimeECO / PrimeClosure (2019–2024)*
-- Shipped **timing-aware ECO legalization** with **timer–router–legalizer co-optimization**, improving QoR by 20% across 10+ customer signoff flows, certified for TSMC N3/N2
-- Led signoff timer integration for Tweaker ECO merge
-
 ### Learning-Guided Physical Design & Neuromorphic Computing
 *Intel Labs (2019) · Georgia Tech Ph.D. (2014–2019)*
 - Automate standard cell routing at advanced Intel nodes, replacing manual heuristics with **reinforcement learning** at Intel microarchitecture group
 - Built **C++ MPI-based parallel spiking neural network simulators** on Oak Ridge supercomputing infrastructure
 - Designed **3D neuromorphic accelerators** and **RISC-V gate-level M3D systems** for emerging memory technologies at DARPA CHIPS project
+
+### Timing-Driven ECO & Signoff Optimization
+*Synopsys PrimeTime ECO / PrimeECO / PrimeClosure (2019–2024)*
+- Shipped **timing-aware ECO legalization** with **timer–router–legalizer co-optimization**, improving QoR by 20% across 10+ customer signoff flows, certified for TSMC N3/N2
+- Led signoff timer integration for Tweaker ECO merge
 
 ### Skills
 - **C/C++:** production EDA engines — placement, routing, legalization, parasitic extraction, signoff optimization
