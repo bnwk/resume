@@ -9,7 +9,7 @@ title: R&D, Synopsys
 ---
 
 ## Summary
-EDA R&D engineer with **10+ years** shipping **production-grade physical design and signoff optimization engines** — placement, routing, timing ECO, and multi-die packaging — deployed at scale in commercial tools. Recipient of the **Synopsys T&PD Group Award (2025)** and **IEEE TCAD Donald O. Pederson Best Paper Award (2022)**. Ph.D. in 3D IC physical design with deep expertise in **PPA optimization, ML-guided design, and neuromorphic computing**. Driven to build **EDA solutions for next-generation scaling**.
+EDA R&D engineer with **10+ years** shipping **production-grade physical design and signoff optimization engines** — placement, routing, timing ECO, and multi-die packaging — deployed at scale in commercial tools. Recipient of the **Synopsys TPG Award (2025)** and **IEEE TCAD Donald O. Pederson Best Paper Award (2022)**. Ph.D. in 3D IC physical design with deep expertise in **PPA optimization, ML-guided design, and neuromorphic computing**. Driven to build **EDA solutions for next-generation scaling**.
 
 ## Active Roles
 - **DAC 2026** Technical Program Committee member
