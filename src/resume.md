@@ -60,7 +60,7 @@ EDA R&D engineer with **10+ years** shipping **production-grade physical design 
 ### Selected Publications
 *26 total publications · 6 papers at DAC/ICCAD · <span class="screen-only">[full list →](publications.html)</span><span class="print-only">full list upon request</span>*
 - **B. W. Ku**, K. Chang, S. K. Lim, "Compact-2D: A Physical Design Methodology to Build Two-Tier Gate-level 3D ICs," **IEEE TCAD**, 2020 — *Donald O. Pederson Best Paper Award*
-- **B. W. Ku**, Y. Liu, Y. Jin, S. Samal, P. Li, S. K. Lim, "Design and Architectural Co-optimization of Monolithic 3D Liquid State Machine-based Neuromorphic Processor," **DAC**, 2018
+- A. Mallik, A. Vandooren, L. Witters, A. Walke, J. Franco, Y. Sherazi, P. Weckx, D. Yakimets, M. Bardon, B. Parvais, P. Debacker, **B. W. Ku**, S. K. Lim, A. Mocuta, D. Mocuta, J. Ryckaert, N. Collaert, and P. Raghavan, "The Impact of Sequential-3D Integration on Semiconductor Scaling Roadmap," **IEDM**, 2017
 
 ## Education
 
