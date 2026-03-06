@@ -1,10 +1,19 @@
-name: Build index.html + resume.pdf
+name: Build & Deploy Resume
+
 on:
   push:
     branches: [ "main" ]
   workflow_dispatch:
+
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,9 +25,32 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: npm run build
-      - run: |
+      - name: Commit generated artifacts
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f index.html publications.html "resume - Bon Woong Ku -"*.pdf
           git commit -m "Rebuild resume artifacts" || echo "No changes"
           git push --force
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p _site/pdfs
+          cp index.html publications.html _site/
+          cp -r src _site/src
+          cp pdfs/*.pdf _site/pdfs/
+          cp "resume - Bon Woong Ku -"*.pdf _site/ 2>/dev/null || true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
