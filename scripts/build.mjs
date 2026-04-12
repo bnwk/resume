@@ -40,6 +40,7 @@ function buildPage(srcPath, outPath, { pageTitle, headerExtra = "", backLink = "
   const phone = fm.phone || "";
   const linkedin = fm.linkedin || "";
   const scholar = fm.scholar || "";
+  const authorization = fm.authorization || "";
 
   const profileLinks = [
     linkedin ? `<a href="${linkedin}">LinkedIn</a>` : "",
@@ -49,7 +50,7 @@ function buildPage(srcPath, outPath, { pageTitle, headerExtra = "", backLink = "
   const headerHtml = `
   <header class="header">
     <h1 class="name">${name}</h1>
-    <div class="sub">${[title, location].filter(Boolean).join(" · ")}</div>
+    <div class="sub">${[title, location, authorization].filter(Boolean).join(" · ")}</div>
     <div class="links">
       ${email ? `<a href="mailto:${email}">${email}</a>` : ""}
       ${(email && phone) ? `<span>•</span>` : ""}

@@ -1,6 +1,7 @@
 ---
 name: Bon Woong Ku
 location: Sunnyvale, CA
+authorization: U.S. Permanent Resident
 phone: "+1 (669) 225-1858"
 email: bon.ku@synopsys.com
 linkedin: https://linkedin.com/in/bon-woong-ku
