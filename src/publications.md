@@ -1,5 +1,4 @@
 ---
-name: Bon Woong Ku
 title: Full Publication List
 ---
 

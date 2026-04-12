@@ -11,21 +11,30 @@ const yy = String(now.getFullYear()).slice(-2);
 
 const md = new MarkdownIt({ html: true, linkify: true, typographer: true });
 
-function parseFrontmatter(text){
-  if (!text.startsWith("---")) return { fm: {}, body: text };
-  const end = text.indexOf("\n---", 3);
-  if (end === -1) return { fm: {}, body: text };
-  const raw = text.slice(3, end).trim();
-  const body = text.slice(end + 4).trimStart();
-  const fm = {};
-  for (const line of raw.split("\n")){
+function parseYamlish(text) {
+  const obj = {};
+  for (const line of text.split("\n")) {
     const m = line.match(/^([^:]+):\s*(.*)$/);
     if (!m) continue;
     const k = m[1].trim();
     let v = m[2].trim().replace(/^"|"$/g, "");
-    fm[k]=v;
+    obj[k] = v;
   }
-  return { fm, body };
+  return obj;
+}
+
+const sharedHeader = parseYamlish(
+  fs.readFileSync(path.join(root, "src", "header.yaml"), "utf-8"),
+);
+
+function parseFrontmatter(text){
+  if (!text.startsWith("---")) return { fm: { ...sharedHeader }, body: text };
+  const end = text.indexOf("\n---", 3);
+  if (end === -1) return { fm: { ...sharedHeader }, body: text };
+  const raw = text.slice(3, end).trim();
+  const body = text.slice(end + 4).trimStart();
+  const local = parseYamlish(raw);
+  return { fm: { ...sharedHeader, ...local }, body };
 }
 
 function buildPage(srcPath, outPath, { pageTitle, headerExtra = "", backLink = "" } = {}) {
