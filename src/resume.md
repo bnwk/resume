@@ -5,39 +5,38 @@ phone: "+1 (669) 225-1858"
 email: bon.ku@synopsys.com
 linkedin: https://linkedin.com/in/bon-woong-ku
 scholar: https://scholar.google.com/citations?user=zFx53eYAAAAJ&hl=en&oi=ao
-title: R&D, Synopsys
+title: Principal R&D, Synopsys
 ---
 
 ## Summary
-EDA R&D engineer with **10+ years** shipping **production-grade physical design and signoff optimization engines** — placement, routing, timing ECO, and multi-die packaging — deployed at scale in commercial tools. Recipient of the **Synopsys TPG Award (2025)** and **IEEE TCAD Donald O. Pederson Best Paper Award (2022)**. Ph.D. in 3D IC physical design with deep expertise in **PPA optimization, ML-guided design, and neuromorphic computing**. Driven to build **EDA solutions for next-generation scaling**.
+Semiconductor physical design automation expert with **10+ years** delivering **production-grade placement, routing, timing optimization, and multi-die packaging solutions** at advanced nodes (TSMC N3/N2). Currently architecting **interposer routing and heterogeneous integration flows** for Synopsys 3DIC Compiler. Recipient of the **Synopsys TPG Award (2025)** and **IEEE TCAD Donald O. Pederson Best Paper Award (2022)**. Ph.D. in 3D IC physical design with deep expertise in **die-to-die interconnect, power delivery network optimization, and ML-driven design automation**. Driven to build **next-generation AI silicon at scale**.
 
 ## Active Roles
 - **DAC 2026** Technical Program Committee member
-- **Synopsys 3DIC Compiler** — Lead R&D engineer for advanced multi-die channel routing
+- **Synopsys 3DIC Compiler** — Technical lead architecting multi-die routing and packaging optimization
 
 ## Core Expertise
 
-### Multi-Die & 3D IC Physical Design
+### Multi-Die & Advanced Packaging
 *Synopsys 3DIC Compiler (2024–present) · Synopsys StarRC (2016) · IMEC (2015–2016) · Georgia Tech Ph.D. (2014–2019)*
-- Architecting **interposer routing** and **feasibility-aware global optimization**, shipped to 10+ customers with 10× exploration speedup at 3DIC Compiler
-- Developed **tier-partitioning algorithms** and full-chip physical design flows for gate-level monolithic 3D ICs at IMEC
-- Built **extraction-PDN co-optimization** flows for 3D integration at StarRC
-- Created scalable **M3D methodologies** validated on 10+ designs; developed experimental **M3D PDKs** at 10nm/7nm for PPA analysis at Georgia Tech
+- Architecting **interposer routing** and **feasibility-aware chiplet integration**, shipped to 10+ customers with 10× exploration speedup at 3DIC Compiler
+- Developed **tier-partitioning algorithms** and full-chip physical design flows for gate-level **monolithic 3D ICs** at IMEC
+- Built **extraction–PDN co-optimization** flows for 3D integration at StarRC
+- Created scalable **3D IC methodologies** validated on 10+ designs; developed experimental **PDKs at 10nm/7nm** for PPA analysis at Georgia Tech
 
-### Learning-Guided Physical Design & Neuromorphic Computing
-*Intel Labs (2019) · Georgia Tech Ph.D. (2014–2019)*
-- Automate standard cell routing at advanced Intel nodes, replacing manual heuristics with **reinforcement learning** at Intel microarchitecture group
-- Built **C++ MPI-based parallel spiking neural network simulators** on Oak Ridge supercomputing infrastructure
-- Designed **3D neuromorphic accelerators** and **RISC-V gate-level M3D systems** for emerging memory technologies at DARPA CHIPS project
-
-### Timing-Driven ECO & Signoff Optimization
+### Physical Design & Signoff at Advanced Nodes
 *Synopsys PrimeTime ECO / PrimeECO / PrimeClosure (2019–2024)*
-- Shipped **timing-aware ECO legalization** with **timer–router–legalizer co-optimization**, improving QoR by 20% across 10+ customer signoff flows, certified for TSMC N3/N2
-- Led signoff timer integration for Tweaker ECO merge
+- Shipped **timing-aware ECO legalization** with **timer–router–legalizer co-optimization**, improving QoR by 20% across 10+ customer signoff flows, **certified for TSMC N3/N2**
+- Led signoff timer integration for Tweaker ECO merge, ensuring first-silicon-success at the most advanced process nodes
+
+### AI-Driven Design Automation
+*Intel Labs (2019) · Georgia Tech Ph.D. (2014–2019)*
+- Automated standard cell routing at advanced Intel nodes, replacing manual heuristics with **reinforcement learning** — demonstrating ML-guided physical design for high-performance compute silicon
+- Designed **heterogeneous 3D accelerator architectures** integrating logic and emerging memory technologies at DARPA CHIPS project
 
 ### Skills
 - **C/C++:** production EDA engines — placement, routing, legalization, parasitic extraction, signoff optimization
-- **Tcl/Shell:** EDA flow integration, customer-facing scripting (PrimeSuite, 3DIC Compiler)
+- **Tcl/Shell:** physical design methodology integration, customer-facing scripting (PrimeSuite, 3DIC Compiler)
 - **Rust:** systems programming for next-generation EDA tooling
 - **Python / PyTorch:** ML pipelines, design automation for physical design
 
