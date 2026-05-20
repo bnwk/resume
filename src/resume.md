@@ -5,6 +5,7 @@
 Semiconductor physical design automation expert with **10+ years** delivering **production-grade placement, routing, timing optimization, and multi-die packaging solutions** at advanced nodes (TSMC N3/N2). Currently architecting **interposer routing and heterogeneous integration flows** for Synopsys 3DIC Compiler. Recipient of the **Synopsys TPG Award (2025)** and **IEEE TCAD Donald O. Pederson Best Paper Award (2022)**. Ph.D. in 3D IC physical design with deep expertise in **die-to-die interconnect, power delivery network optimization, and ML-driven design automation**. Driven to build **next-generation AI silicon at scale**.
 
 ## Active Roles
+- **ICCAD 2026** Technical Program Committee member
 - **DAC 2026** Technical Program Committee member
 - **Synopsys 3DIC Compiler** — Technical lead architecting multi-die routing and packaging optimization
 
