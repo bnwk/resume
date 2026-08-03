@@ -7,7 +7,7 @@ Semiconductor physical design automation expert with **10+ years** delivering **
 ## Active Roles
 - **ICCAD 2026** Technical Program Committee member
 - **DAC 2026** Technical Program Committee member
-- **Synopsys 3DIC Compiler** — Lead R&D engineer for advanced multi-die routing and chiplet integration
+- **Synopsys 3DIC Compiler** — Lead R&D for advanced multi-die routing and chiplet integration
 
 ## Core Expertise
 
