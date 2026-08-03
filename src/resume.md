@@ -7,7 +7,7 @@ Semiconductor physical design automation expert with **10+ years** delivering **
 ## Active Roles
 - **ICCAD 2026** Technical Program Committee member
 - **DAC 2026** Technical Program Committee member
-- **Synopsys 3DIC Compiler** — Technical lead architecting multi-die routing and packaging optimization
+- **Synopsys 3DIC Compiler** — Lead R&D engineer for advanced multi-die routing and chiplet integration
 
 ## Core Expertise
 
@@ -16,6 +16,7 @@ Semiconductor physical design automation expert with **10+ years** delivering **
 - Architecting **interposer routing** and **feasibility-aware chiplet integration**, shipped to 10+ customers with 10× exploration speedup at 3DIC Compiler
 - Developed **tier-partitioning algorithms** and full-chip physical design flows for gate-level **monolithic 3D ICs** at IMEC
 - Built **extraction–PDN co-optimization** flows for 3D integration at StarRC
+- Designed **heterogeneous 3D AI accelerator architectures** integrating logic and emerging memory technologies at DARPA CHIPS project
 - Created scalable **3D IC methodologies** validated on 10+ designs; developed experimental **PDKs at 10nm/7nm** for PPA analysis at Georgia Tech
 
 ### Physical Design & Signoff at Advanced Nodes
@@ -26,11 +27,11 @@ Semiconductor physical design automation expert with **10+ years** delivering **
 ### AI-Driven Design Automation
 *Intel Labs (2019) · Georgia Tech Ph.D. (2014–2019)*
 - Automated standard cell routing at advanced Intel nodes, replacing manual heuristics with **reinforcement learning** — demonstrating ML-guided physical design for high-performance compute silicon
-- Designed **heterogeneous 3D accelerator architectures** integrating logic and emerging memory technologies at DARPA CHIPS project
+- Developed **ML-based wire parasitic prediction** for monolithic 3D ICs, achieving 98%+ RC accuracy and up to 16× timing improvement in full-chip optimization
 
 ### Skills
 - **C/C++:** production EDA engines — placement, routing, legalization, parasitic extraction, signoff optimization
-- **Tcl/Shell:** physical design methodology integration, customer-facing scripting (PrimeSuite, 3DIC Compiler)
+- **Tcl/Shell:** physical design methodology integration, customer-facing scripting
 - **Rust:** systems programming for next-generation EDA tooling
 - **Python / PyTorch:** ML pipelines, design automation for physical design
 
